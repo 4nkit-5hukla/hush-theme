@@ -17,7 +17,7 @@ $include_files = array(
   'theme_scripts' => get_template_directory() . '/inc/actions/theme_scripts.php',
   //TODO: filters
   'remove_ver' => get_template_directory() . '/inc/filters/remove_ver.php',
-  'minify_css' => get_template_directory() . '/inc/filters/minify_css.php',
+  /* 'minify_css' => get_template_directory() . '/inc/filters/minify_css.php', */
   //TODO: minify output
   'minify_start' => get_template_directory() . '/inc/actions/minify_start.php',
 );

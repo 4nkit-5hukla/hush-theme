@@ -104,6 +104,26 @@
       }
     }
 
+    .overlay1 {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      background-color: #a9a9a9;
+      overflow-y: auto;
+      overflow-x: hidden;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 1s;
+
+      &.active-opacity {
+        width: 100%;
+        opacity: 0.8;
+      }
+    }
+
     .mob-menu {
       background-color: #fff;
       top: 0;

@@ -135,8 +135,8 @@
           </li>
         </ul>
         <ul class="list-unstyled p-0 mx-0 mob-second-menu">
-          <li class="d-flex"><span><img src="./images/logo2.png" alt="" class="" /></span>Hush</li>
-          <li class="d-flex"><span><img src="./images/logo2.png" alt="" class="" /></span>Hush</li>
+          <li class="d-flex"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo2.png" alt="" class="" /></span>Hush</li>
+          <li class="d-flex"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo2.png" alt="" class="" /></span>Hush</li>
         </ul>
         <p class="leran-more">Become a Nike Member for the best products, inspiration and stories in sports. Learn
           More.<a href="">Learn More.</a></p>
