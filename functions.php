@@ -11,6 +11,7 @@ $include_files = array(
   //TODO: class include
   'HTML_Minify' => get_template_directory() . '/inc/classes/HTML_Minify.php',
   //TODO: functions include
+  'add_theme_options_page' => get_template_directory() . '/inc/functions/add_theme_options_page.php',
   'remove_wp_defaults' => get_template_directory() . '/inc/functions/remove_wp_defaults.php',
   'do_minify' => get_template_directory() . '/inc/functions/do_minify.php',
   //TODO: theme scripts

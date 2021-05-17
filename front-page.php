@@ -9,7 +9,7 @@
             <div class="banner-content d-none d-md-block position-absolute">
               <span class="hn-b">Pegasus 2 Gore tek gear</span>
               <h1 class="py-2 hn-l">IN YOUR ELEMENT</h1>
-              <a href="javascript:void(0)" class="btn primary-btn px-3 m-0">
+              <a href="javascript:void(0)" aria-label="SHOP NOW" class="btn primary-btn px-3 m-0">
                 SHOP NOW
               </a>
             </div>
@@ -19,7 +19,7 @@
             <div class="banner-content d-none d-md-block position-absolute">
               <span class="hn-b">Pegasus 2 Gore tek gear</span>
               <h1 class="py-2 hn-l">IN YOUR ELEMENT</h1>
-              <a href="javascript:void(0)" class="btn primary-btn px-3 m-0">
+              <a href="javascript:void(0)" aria-label="SHOP NOW" class="btn primary-btn px-3 m-0">
                 SHOP NOW
               </a>
             </div>
@@ -43,13 +43,13 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="javascript:void(0)">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pdt1.jpg" alt="" class="w-100" />
                   </a>
                 </div>
                 <div class="product-card-footer d-block d-md-flex justify-content-between no-gutters">
                   <div class="col-12 col-md-9">
-                    <a href="javascript:void(0)" class="text-decoration-none text-dark">
+                    <a href="javascript:void(0)" aria-label="Product-Link" class="text-decoration-none text-dark">
                       <h5 class="card-title pdt-title">Nike Air Force 1</h5>
                     </a>
                     <span class="pdt-type">Men's Shoe</span>
@@ -65,13 +65,13 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="javascript:void(0)">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pdt2.jpg" alt="" class="w-100" />
                   </a>
                 </div>
                 <div class="product-card-footer d-block d-md-flex justify-content-between no-gutters">
                   <div class="col-12 col-md-9">
-                    <a href="javascript:void(0)" class="text-decoration-none text-dark">
+                    <a href="javascript:void(0)" aria-label="Product-Link" class="text-decoration-none text-dark">
                       <h5 class="card-title pdt-title">Nike Air Force 1</h5>
                     </a>
                     <span class="pdt-type">Men's Shoe</span>
@@ -87,13 +87,13 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="javascript:void(0)">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pdt3.jpg" alt="" class="w-100" />
                   </a>
                 </div>
                 <div class="product-card-footer d-block d-md-flex justify-content-between no-gutters">
                   <div class="col-12 col-md-9">
-                    <a href="javascript:void(0)" class="text-decoration-none text-dark">
+                    <a href="javascript:void(0)" aria-label="Product-Link" class="text-decoration-none text-dark">
                       <h5 class="card-title pdt-title">Nike Air Force 1</h5>
                     </a>
                     <span class="pdt-type">Men's Shoe</span>
@@ -109,13 +109,13 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="javascript:void(0)">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pdt2.jpg" alt="" class="w-100" />
                   </a>
                 </div>
                 <div class="product-card-footer d-block d-md-flex justify-content-between no-gutters">
                   <div class="col-12 col-md-9">
-                    <a href="javascript:void(0)" class="text-decoration-none text-dark">
+                    <a href="javascript:void(0)" aria-label="Product-Link" class="text-decoration-none text-dark">
                       <h5 class="card-title pdt-title">Nike Air Force 1</h5>
                     </a>
                     <span class="pdt-type">Men's Shoe</span>
@@ -147,7 +147,7 @@
             </div>
             <div class="product-card-footer btn-box position-absolute">
               <span class="text-white w-100 d-block for-her">For Her</span>
-              <a href="javascript:void(0)" class="btn btn-white px-3 m-0">
+              <a href="javascript:void(0)" aria-label="SHOP NOW" class="btn btn-white px-3 m-0">
                 SHOP NOW
               </a>
             </div>
@@ -161,7 +161,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/832x700.jpg" alt="" class="w-100" />
             </div>
             <div class="product-card-footer btn-box position-absolute">
-              <a href="javascript:void(0)" class="btn primary-btn px-3 m-0">
+              <a href="javascript:void(0)" aria-label="SHOP NOW" class="btn primary-btn px-3 m-0">
                 SHOP NOW
               </a>
             </div>
@@ -185,13 +185,13 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="product.php">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pdt4.jpg" alt="" class="w-100" />
                   </a>
                 </div>
                 <div class="product-card-footer d-block d-md-flex justify-content-between no-gutters">
                   <div class="col-12 col-md-9">
-                    <a href="product.php" class="text-decoration-none text-dark">
+                    <a href="javascript:void(0)" aria-label="Product-Link" class="text-decoration-none text-dark">
                       <h5 class="card-title pdt-title">Nike Air Force 1</h5>
                     </a>
                     <span class="pdt-type">Men's Shoe</span>
@@ -207,13 +207,13 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="product.php">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pdt5.jpg" alt="" class="w-100" />
                   </a>
                 </div>
                 <div class="product-card-footer d-block d-md-flex justify-content-between no-gutters">
                   <div class="col-12 col-md-9">
-                    <a href="product.php" class="text-decoration-none text-dark">
+                    <a href="javascript:void(0)" aria-label="Product-Link" class="text-decoration-none text-dark">
                       <h5 class="card-title pdt-title">Nike Air Force 1</h5>
                     </a>
                     <span class="pdt-type">Men's Shoe</span>
@@ -229,13 +229,13 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="product.php">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pdt6.jpg" alt="" class="w-100" />
                   </a>
                 </div>
                 <div class="product-card-footer d-block d-md-flex justify-content-between no-gutters">
                   <div class="col-12 col-md-9">
-                    <a href="product.php" class="text-decoration-none text-dark">
+                    <a href="javascript:void(0)" aria-label="Product-Link" class="text-decoration-none text-dark">
                       <h5 class="card-title pdt-title">Nike Air Force 1</h5>
                     </a>
                     <span class="pdt-type">Men's Shoe</span>
@@ -251,13 +251,13 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="product.php">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pdt6.jpg" alt="" class="w-100" />
                   </a>
                 </div>
                 <div class="product-card-footer d-block d-md-flex justify-content-between no-gutters">
                   <div class="col-12 col-md-9">
-                    <a href="product.php" class="text-decoration-none text-dark">
+                    <a href="javascript:void(0)" aria-label="Product-Link" class="text-decoration-none text-dark">
                       <h5 class="card-title pdt-title">Nike Air Force 1</h5>
                     </a>
                     <span class="pdt-type">Men's Shoe</span>
@@ -321,7 +321,7 @@
             </div>
             <div class="product-card-footer btn-box position-absolute">
               <span class="text-white w-100 d-block for-her">For Her</span>
-              <a href="shop.php" class="btn btn-white px-3 m-0">
+              <a href="javascript:void(0)" aria-label="SHOP NOW" class="btn btn-white px-3 m-0">
                 SHOP NOW
               </a>
             </div>
@@ -335,7 +335,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/product2.jpg" alt="" class="w-100" />
             </div>
             <div class="product-card-footer btn-box position-absolute">
-              <a href="shop.php" class="btn primary-btn px-3 m-0">
+              <a href="javascript:void(0)" aria-label="SHOP NOW" class="btn primary-btn px-3 m-0">
                 SHOP NOW
               </a>
             </div>
@@ -359,7 +359,7 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="product.php">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nike1.jpg" alt="" class="w-100" />
                   </a>
                 </div>
@@ -370,7 +370,7 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="product.php">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nike2.jpg" alt="" class="w-100" />
                   </a>
                 </div>
@@ -381,7 +381,7 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="product.php">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nike3.jpg" alt="" class="w-100" />
                   </a>
                 </div>
@@ -392,7 +392,7 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="product.php">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nike2.jpg" alt="" class="w-100" />
                   </a>
                 </div>
@@ -403,7 +403,7 @@
             <div class="product-card">
               <div class="product-card-body">
                 <div class="product-image">
-                  <a href="product.php">
+                  <a href="javascript:void(0)" aria-label="Product-Link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nike3.jpg" alt="" class="w-100" />
                   </a>
                 </div>

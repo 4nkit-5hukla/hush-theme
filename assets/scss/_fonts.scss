@@ -4,7 +4,9 @@
     url('../fonts/helveticaneue/normal/helveticaneue.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'HN-R';
   src: url('../fonts/helveticaneue/regular/helvetica_neue_regular.woff2')
@@ -13,7 +15,9 @@
       format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'HN-B';
   src: url('../fonts/helveticaneue/bold/helvetica_neu_bold.woff2')
@@ -21,7 +25,9 @@
     url('../fonts/helveticaneue/bold/helvetica_neu_bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'HN-M';
   src: url('../fonts/helveticaneue/med/helveticaneue_medium.woff2')
@@ -29,7 +35,9 @@
     url('../fonts/helveticaneue/med/helveticaneue_medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'HN-L';
   src: url('../fonts/helveticaneue/light/helveticaneue_light.woff2')
@@ -37,14 +45,18 @@
     url('../fonts/helveticaneue/light/helveticaneue_light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'FB';
   src: url('../fonts/futura/futura_book_font.woff2') format('woff2'),
     url('../fonts/futura/futura_book_font.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'F-EB';
   src: url('../fonts/futura/futura-extra-bold/futura_condensed_extra_bold.woff2')
@@ -53,22 +65,29 @@
       format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 .fb {
   font-family: 'FB';
 }
+
 .f-eb {
   font-family: 'F-EB';
 }
+
 .hn-l {
   font-family: 'HN-L';
 }
+
 .hn-m {
   font-family: 'HN-M';
 }
+
 .hn-r {
   font-family: 'HN-R';
 }
+
 .hn-b {
   font-family: 'HN-B';
 }

@@ -132,19 +132,19 @@
         <div class="col-12 col-md-3 footer-widgets">
           <ul class="footer-menu-list social-icon p-0 list-unstyled d-block">
             <li class="d-inline-block">
-              <a href="#" class="text-decoration-none"><i class="fa fa-twitter"></i>
+              <a href="#" class="text-decoration-none" aria-label="Twitter"><i class="fa fa-twitter"></i>
               </a>
             </li>
             <li class="d-inline-block">
-              <a href="#" class="text-decoration-none"><i class="fa fa-facebook"></i>
+              <a href="#" class="text-decoration-none" aria-label="Facebook"><i class="fa fa-facebook"></i>
               </a>
             </li>
             <li class="d-inline-block">
-              <a href="#" class="text-decoration-none"><i class="fa fa-youtube-play"></i>
+              <a href="#" class="text-decoration-none" aria-label="YouTube"><i class="fa fa-youtube-play"></i>
               </a>
             </li>
             <li class="d-inline-block">
-              <a href="#" class="text-decoration-none"><i class="fa fa-instagram"></i>
+              <a href="#" class="text-decoration-none" aria-label="Instagram"><i class="fa fa-instagram"></i>
               </a>
             </li>
           </ul>

@@ -92,4 +92,15 @@
 @media (min-width: 1600px) {
 }
 @media (min-width: 1920px) {
+  .banner-section {
+    .home-banner {
+      .new-home-banner {
+        .banner-content {
+          h1 {
+            letter-spacing: -2.63px;
+          }
+        }
+      }
+    }
+  }
 }

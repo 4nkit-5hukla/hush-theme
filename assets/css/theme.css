@@ -4,6 +4,7 @@
   src: url("../fonts/helveticaneue/normal/helveticaneue.woff2") format("woff2"), url("../fonts/helveticaneue/normal/helveticaneue.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
   src: url("../fonts/helveticaneue/regular/helvetica_neue_regular.woff2") format("woff2"), url("../fonts/helveticaneue/regular/helvetica_neue_regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -18,6 +20,7 @@
   src: url("../fonts/helveticaneue/bold/helvetica_neu_bold.woff2") format("woff2"), url("../fonts/helveticaneue/bold/helvetica_neu_bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -25,6 +28,7 @@
   src: url("../fonts/helveticaneue/med/helveticaneue_medium.woff2") format("woff2"), url("../fonts/helveticaneue/med/helveticaneue_medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,6 +36,7 @@
   src: url("../fonts/helveticaneue/light/helveticaneue_light.woff2") format("woff2"), url("../fonts/helveticaneue/light/helveticaneue_light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -39,6 +44,7 @@
   src: url("../fonts/futura/futura_book_font.woff2") format("woff2"), url("../fonts/futura/futura_book_font.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -46,6 +52,7 @@
   src: url("../fonts/futura/futura-extra-bold/futura_condensed_extra_bold.woff2") format("woff2"), url("../fonts/futura/futura-extra-bold/futura_condensed_extra_bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .fb {
@@ -14865,11 +14872,29 @@ button.swiper-pagination-bullet {
     background-repeat: no-repeat;
   }
   header .middle-header .navbar .search-and-icon .search-form-header input {
-    border: none;
     background-color: #f2f2f2;
+    border: none;
     border-radius: 20px;
+    color: #000000;
+    display: inline-block;
     padding: 8px 10px 8px 35px;
-    color: #000;
+    vertical-align: middle;
+  }
+  header .middle-header .navbar .search-and-icon .search-form-header input::-webkit-input-placeholder {
+    color: #cccccc;
+    opacity: 1;
+  }
+  header .middle-header .navbar .search-and-icon .search-form-header input:-ms-input-placeholder {
+    color: #cccccc;
+    opacity: 1;
+  }
+  header .middle-header .navbar .search-and-icon .search-form-header input::-ms-input-placeholder {
+    color: #cccccc;
+    opacity: 1;
+  }
+  header .middle-header .navbar .search-and-icon .search-form-header input::placeholder {
+    color: #cccccc;
+    opacity: 1;
   }
   header .middle-header .navbar .tab-view .navbar-toggler {
     padding-top: 0;
@@ -15032,6 +15057,9 @@ button.swiper-pagination-bullet {
   header .middle-header .navbar.navbar-light .navbar-nav .nav-link {
     font-size: 14px;
   }
+  header .middle-header .navbar .header-icon li {
+    margin-left: 20px;
+  }
   header .middle-header .navbar .header-icon li a img {
     width: 27px;
     height: 27px;
@@ -15050,6 +15078,9 @@ button.swiper-pagination-bullet {
 @media (min-width: 1200px) {
   header .middle-header .navbar.navbar-light .navbar-nav .nav-link {
     font-size: 16px;
+  }
+  header .middle-header .navbar .header-icon li {
+    margin-left: 26px;
   }
   header .middle-header .navbar .tab-view ul li {
     margin: 0px;
@@ -15123,6 +15154,12 @@ button.swiper-pagination-bullet {
     height: 792px;
     -o-object-position: 76% center;
     object-position: 76% center;
+  }
+}
+
+@media (min-width: 1920px) {
+  .banner-section .home-banner .new-home-banner .banner-content h1 {
+    letter-spacing: -2.63px;
   }
 }
 

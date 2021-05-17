@@ -31,19 +31,21 @@
         <div class="row mx-n2">
           <nav class="navbar navbar-expand-md navbar-light d-flex w-100 justify-content-between px-2">
             <div class="col col-md-2 col-lg-3 px-0">
-              <a class="navbar-brand" href="/" style="width: 82px"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/hushlogonew2x.png" alt="" class="w-100" /></a>
+              <a class="navbar-brand" href="/" style="width: 82px" aria-label="Home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/hushlogonew2x.png" alt="" class="w-100" /></a>
             </div>
             <div class="col col-md-7 col-lg-6 order-md-2 order-3 order-lg-2 px-0 px-md-2 d-flex justify-content-end justify-content-lg-center tab-view">
               <ul class="mx-0 mt-0 list-unstyled d-flex d-md-none mb-0 header-icon">
                 <li class="cart">
-                  <a class="text-decoration-none text-dark" href="cart.php"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Image 1.svg" alt="" />
+                  <a class="text-decoration-none text-dark" href="cart.php" aria-label="Cart"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Image 1.svg" alt="" />
                   </a>
                 </li>
                 <li class="heart-like">
-                  <a class="text-decoration-none text-dark" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Image 9.svg" alt="" /></a>
+                  <a class="text-decoration-none text-dark" href="#" aria-label="Wishlist">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Image 9.svg" alt="" />
+                  </a>
                 </li>
               </ul>
-              <button class="navbar-toggler border-0 float-right px-0">
+              <button class="navbar-toggler border-0 float-right px-0" aria-label="Toggle Menu">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="d-none d-md-block d-lg-block">
@@ -65,50 +67,30 @@
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 d-md-none search-form-header">
-                  <input class="mr-sm-2 form-input-box" type="search" placeholder="Search" />
+                  <input class="mr-sm-2 form-input-box" type="search" placeholder="Search" aria-label="Search" />
                 </form>
               </div>
             </div>
             <div class="col col-md-3 col-lg-3 d-none d-md-flex d-lg-flex justify-content-end order-2 order lg-3 px-0 search-and-icon">
               <form class="form-inline my-2 my-lg-0 d-none d-md-block search-form-header" style="max-width: 180px">
-                <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/Icon feather-search.svg" alt="search-icon" />
-                <input class="form-control w-100 form-input-box" type="search" placeholder="Search" />
+                <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/search.png" alt="search" width="27" height="27" />
+                <input class="form-control w-100 form-input-box" type="search" placeholder="Search" aria-label="Search" />
               </form>
               <ul class="mx-0 mt-0 list-unstyled d-flex mb-0 header-icon">
                 <li class="heart-like">
-                  <a class="text-decoration-none text-dark" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Image 9.svg" alt="" /></a>
+                  <a class="text-decoration-none text-dark" href="#" aria-label="Wishlist">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wishlist.png" alt="wishlist" width="27" height="27" />
+                  </a>
                 </li>
                 <li class="cart">
-                  <a class="text-decoration-none text-dark" href="cart.php"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Image 1.svg" alt="" />
+                  <a class="text-decoration-none text-dark" href="cart.php" aria-label="Cart">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bag.png" alt="cart" width="27" height="27" />
                   </a>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
-      </div>
-      <div id="mob-menu" class="d-none mob-menu-old position-fixed">
-        <span class="close-menu"><i class="fa fa-times"></i></span>
-        <ul class="navbar-nav mx-0 w-100 mt-2 mt-lg-0 justify-content-center">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Dried Cannabis</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Concentrates</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vape Pens</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Edibles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">New releases</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0 d-lg-none">
-          <input class="form-control mr-sm-2" type="search" />
-        </form>
       </div>
       <div class="overlay1">
       </div>
@@ -135,8 +117,18 @@
           </li>
         </ul>
         <ul class="list-unstyled p-0 mx-0 mob-second-menu">
-          <li class="d-flex"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo2.png" alt="" class="" /></span>Hush</li>
-          <li class="d-flex"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo2.png" alt="" class="" /></span>Hush</li>
+          <li class="d-flex">
+            <span>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo2.png" alt="" class="" />
+            </span>
+            Hush
+          </li>
+          <li class="d-flex">
+            <span>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo2.png" alt="" class="" />
+            </span>
+            Hush
+          </li>
         </ul>
         <p class="leran-more">Become a Nike Member for the best products, inspiration and stories in sports. Learn
           More.<a href="">Learn More.</a></p>
