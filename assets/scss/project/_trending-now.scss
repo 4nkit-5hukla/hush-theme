@@ -57,9 +57,14 @@
         }
 
         .pdt-type {
-          font-size: 15px;
-          color: #525252;
-          font-family: 'HN-L';
+          a {
+            font-size: 15px;
+            color: #525252;
+            font-family: 'HN-L';
+            text-decoration: none;
+            cursor: default;
+            pointer-events: none;
+          }
         }
       }
     }

@@ -9,6 +9,8 @@ get_header(); ?>
     $attachment_ids = $product->get_gallery_image_ids($post_id); 
 ?>
 
+
+
 <section class="product-section-1 product-area">
       <div class="container-fluid">
         <div class="row">
@@ -36,7 +38,7 @@ get_header(); ?>
           <div class="col-12 col-md-4 pt-3 product-detail-outer">
             <div class="product-details">
               <p class="small-title hn-m m-0"><?php echo wc_get_product_category_list( $product->get_id()); ?></p>
-              <p class="product-price w-100 text-right hn-m m-0"><?php echo $product->get_price_html(); ?></p>
+              <p class="product-price w-100 text-right hn-m m-0">$135</p>
               <h4 class="product-title hn-m m-0"><?php the_title(); ?></h4>
               <div
                 class="pdt-weight-variant d-flex justify-content-between pt-5"
