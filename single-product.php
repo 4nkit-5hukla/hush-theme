@@ -9,7 +9,7 @@ get_header(); ?>
     $attachment_ids = $product->get_gallery_image_ids($post_id); 
 ?>
 
-<section class="product-section-1 product-area demo">
+<section class="product-section-1 product-area">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-8 px-3">
