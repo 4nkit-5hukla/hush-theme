@@ -1,25 +1,16 @@
 <?php
 get_header(); ?>
-
-
-
 <?php while ( have_posts() ) : ?>
 			<?php the_post(); 
       
     $attachment_ids = $product->get_gallery_image_ids($post_id); 
 ?>
-
-
-
 <section class="product-section-1 product-area">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-8 px-3">
             <div class="row">
-
-            
             <?php 
-            
              foreach( $attachment_ids as $attachment_id ) { ?>
              <div class="col-6 px-2 my-2">
                 <img
@@ -38,7 +29,7 @@ get_header(); ?>
           <div class="col-12 col-md-4 pt-3 product-detail-outer">
             <div class="product-details">
               <p class="small-title hn-m m-0"><?php echo wc_get_product_category_list( $product->get_id()); ?></p>
-              <p class="product-price w-100 text-right hn-m m-0">$135</p>
+              <p class="product-price w-100 text-right hn-m m-0"><?php echo $product->get_price_html(); ?></p>
               <h4 class="product-title hn-m m-0"><?php the_title(); ?></h4>
               <div
                 class="pdt-weight-variant d-flex justify-content-between pt-5"
@@ -69,15 +60,9 @@ get_header(); ?>
                 Add to Bag
               </a>
               <div class="product-desc w-100">
+                
                 <p class="hn-l">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                  nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed.
+                  <?php echo  $post->post_content; ?>
                 </p>
               </div>
               <div class="additional-details">
@@ -110,25 +95,31 @@ get_header(); ?>
                     >
                     </span>
                     <div id="delivery" class="flower-list-toggle collapse hn-l">
-                      Free standard delivery on orders over $175
-                      <ul class="p-0 delivery-list m-0 pl-2">
-                        <li>
-                          Delivery may take longer than normal. Check your
-                          estimated delivery date at checkout.
-                        </li>
-                        <li>
-                          You can return your order for any reason, Free of
-                          charge within 30 days.
-                        </li>
-                      </ul>
+                    <?php echo the_field('delivery_and_returns'); ?>
+                     
                     </div>
                   </div>
                 </div>
                 <div
                   class="review flower-type border-top border-bottom collapse-menu px-0"
                 >
+                
                   <div class="grade-list collapse-title">
-                    Reviews (28)
+                  
+                    <?php global $product;
+                      if ( get_option( 'woocommerce_enable_review_rating' ) === 'no' ) {
+                          return;
+                      }
+                      $rating_count = $product->get_rating_count();
+                      $review_count = $product->get_review_count();
+                      $average      = $product->get_average_rating();
+                        if ( $rating_count >= 0 ) : ?>
+                        Review 
+                        <?php if ( comments_open() ): ?>(<?php printf( _n( '%s',$review_count,'woocommerce' ), '<span class="count">' . esc_html( $review_count ) . '</span>' ); ?>)<?php endif ?>
+
+
+                      <?php endif; ?>
+                     
                     <span
                       class="d-icon position-relative float-right pr-4 collapsed d-block"
                       data-toggle="collapse"
@@ -140,153 +131,11 @@ get_header(); ?>
                       <img src="images/Icon/ionic-ios-star.svg" alt="" />
                       <img src="images/Icon/ionic-ios-star-half.svg" alt="" />
                     </span>
+
+                    
                     <div id="review" class="flower-list-toggle collapse hn-l">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                      magna aliquyam erat, sed diam voluptua.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="product-section-2">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 px-2">
-            <p class="hn-l w-100 text-center explore">
-              Explore the Ghost Train Haze Indica
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col position-relative px-2">
-            <img
-              src="images/placeholder-1680-1012.jpg"
-              class="img-fluid w-100"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="product-section-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="about-section px-2">
-            <h4 class="hn-m">YOUR NEW GO-TO INDICA</h4>
-            <p class="hn-l w-100 text-center">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col position-relative px-2 about-section-image">
-            <img
-              src="images/placeholder-1680-1012.jpg"
-              class="img-fluid w-100"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="trending-now product-section-4">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="about-section px-2">
-            <h4 class="hn-m">YOUR NEW GO-TO INDICA</h4>
-            <p class="hn-l w-100 text-center">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet
-            </p>
-          </div>
-        </div>
-        <div class="row trending-section">
-          <h4 class="col px-2 d-none d-lg-block">Trending Now</h4>
-          <h4 class="col px-2 d-lg-none">Gear Up</h4>
-        </div>
-        <div class="row justify-content-between">
-          <div class="product-page-slider swiper swiper-container">
-            <div class="swiper-wrapper px-2">
-              <div class="swiper-slide mb-4">
-                <div class="product-card card-border-bottom">
-                  <div class="product-card-body">
-                    <div class="product-image">
-                      <a href="#">
-                        <img src="./images/pdt1.jpg" alt="" class="w-100" />
-                      </a>
-                    </div>
-                    <div
-                      class="product-card-footer d-block d-md-flex justify-content-between no-gutters"
-                    >
-                      <div class="col-12 col-md-9">
-                        <a href="#" class="text-decoration-none text-dark">
-                          <h5 class="card-title pdt-title">Nike Air Force 1</h5>
-                        </a>
-                        <span class="pdt-type">Men's Shoe</span>
-                      </div>
-                      <div class="col-12 col-md-3 text-left text-md-right">
-                        <span class="pdt-price">$200</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide mb-4">
-                <div class="product-card card-border-bottom">
-                  <div class="product-card-body">
-                    <div class="product-image">
-                      <a href="#">
-                        <img src="./images/pdt2.jpg" alt="" class="w-100" />
-                      </a>
-                    </div>
-                    <div
-                      class="product-card-footer d-block d-md-flex justify-content-between no-gutters"
-                    >
-                      <div class="col-12 col-md-9">
-                        <a href="#" class="text-decoration-none text-dark">
-                          <h5 class="card-title pdt-title">Nike Air Force 1</h5>
-                        </a>
-                        <span class="pdt-type">Men's Shoe</span>
-                      </div>
-                      <div class="col-12 col-md-3 text-left text-md-right">
-                        <span class="pdt-price">$200</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide mb-4">
-                <div class="product-card card-border-bottom">
-                  <div class="product-card-body">
-                    <div class="product-image">
-                      <a href="#">
-                        <img src="./images/pdt3.jpg" alt="" class="w-100" />
-                      </a>
-                    </div>
-                    <div
-                      class="product-card-footer d-block d-md-flex justify-content-between no-gutters"
-                    >
-                      <div class="col-12 col-md-9">
-                        <a href="#" class="text-decoration-none text-dark">
-                          <h5 class="card-title pdt-title">Nike Air Force 1</h5>
-                        </a>
-                        <span class="pdt-type">Men's Shoe</span>
-                      </div>
-                      <div class="col-12 col-md-3 text-left text-md-right">
-                        <span class="pdt-price">$200</span>
-                      </div>
+                      <?php echo do_shortcode('[product_reviews id='.$id.']'); ?>
+                     
                     </div>
                   </div>
                 </div>
@@ -297,4 +146,127 @@ get_header(); ?>
       </div>
     </section>
     <?php endwhile; // end of the loop. ?>
+
+    <?php $section1 = get_field('section1');?>
+    <?php if(!empty($section1)): ?>
+    <section class="product-section-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 px-2">
+            <p class="hn-l w-100 text-center explore">
+              <?php echo $section1['title']; ?>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col position-relative px-2">
+            <img
+              src="<?php echo $section1['image']; ?>"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <?php endif; ?>
+    <?php $section2 = get_field('section2');?>
+    <?php if(!empty($section2)): ?>
+    <section class="product-section-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="about-section px-2">
+            <h4 class="hn-m"><?php echo $section2['title']; ?></h4>
+            <p class="hn-l w-100 text-center">
+             <?php echo $section2['description']; ?>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col position-relative px-2 about-section-image">
+            <img
+              src="<?php echo $section2['image']; ?>"
+              class="img-fluid w-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <?php endif; ?>
+     
+    <section class="trending-now product-section-4">
+      <div class="container-fluid">
+      <?php $section3 = get_field('section3');?>
+    <?php if(!empty($section3)): ?>
+        <div class="row">
+          <div class="about-section px-2">
+            <h4 class="hn-m"><?php echo $section3['title']; ?></h4>
+            <p class="hn-l w-100 text-center">
+              <?php echo $section3['description']; ?>
+            </p>
+          </div>
+        </div>
+        <?php endif; ?>
+        <div class="row trending-section">
+          <h4 class="col px-2 d-none d-lg-block">Trending Now</h4>
+          <h4 class="col px-2 d-lg-none">Gear Up</h4>
+        </div>
+        <div class="row justify-content-between">
+          <div class="product-page-slider swiper swiper-container">
+            <div class="swiper-wrapper px-2">
+              <?php
+$args = array(
+    'post_type' => 'product',
+    'meta_key' => 'total_sales',
+    'orderby' => 'meta_value_num',
+    'posts_per_page' => -1,
+);
+$loop = new WP_Query( $args );
+while ( $loop->have_posts() ) : $loop->the_post(); 
+$image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'post-thumbnail' );
+global $product; ?>
+
+<div class="swiper-slide mb-4">
+                <div class="product-card card-border-bottom">
+                  <div class="product-card-body">
+                    <div class="product-image">
+                      <a href="<?php the_permalink(); ?>">
+                        <img src="<?php echo $image[0]; ?>" alt="<?php echo "image-$id"; ?>" class="w-100" />
+                      </a>
+                    </div>
+                    <div
+                      class="product-card-footer d-block d-md-flex justify-content-between no-gutters"
+                    >
+                      <div class="col-12 col-md-9">
+                        <a href="<?php the_permalink(); ?>" class="text-decoration-none text-dark">
+                          <h5 class="card-title pdt-title"><?php the_title(); ?></h5>
+                        </a>
+                        <span class="pdt-type"><?php echo wc_get_product_tag_list( $product->get_id()); ?></span>
+                      </div>
+                      <div class="col-12 col-md-3 text-left text-md-right">
+                        <span class="pdt-price"><?php echo $product->get_price_html(); ?></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+<?php endwhile; ?>
+<?php wp_reset_query(); ?>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+   <?php while ( have_posts() ) : ?>
+			<?php the_post(); ?>
+
+			<?php the_content(); ?>
+
+		<?php endwhile; // end of the loop. ?>
+    
 <?php get_footer( 'shop' );

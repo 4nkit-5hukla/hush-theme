@@ -7,8 +7,8 @@
       loop: true,
       autoplay: {
         delay: 3500,
-        disableOnInteraction: false
-      }
+        disableOnInteraction: false,
+      },
     });
     new Swiper('.just-in-slides', {
       slidesPerView: 1,
@@ -16,8 +16,8 @@
       loop: true,
       autoplay: {
         delay: 3500,
-        disableOnInteraction: false
-      }
+        disableOnInteraction: false,
+      },
     });
     new Swiper('.product-slider, .product-page-slider', {
       slidesPerView: 1.1,
@@ -25,31 +25,31 @@
       loop: true,
       autoplay: {
         delay: 3500,
-        disableOnInteraction: false
+        disableOnInteraction: false,
       },
       coverflow: {
         rotate: 40,
         stretch: 0,
         depth: 50,
         modifier: 1,
-        slideShadows: false
+        slideShadows: false,
       },
       breakpoints: {
         640: {
-          slidesPerView: 1.1
+          slidesPerView: 1.1,
         },
         768: {
-          slidesPerView: 1.6
+          slidesPerView: 1.6,
         },
         1024: {
           slidesPerView: 3.1,
-          loop: true
+          loop: true,
         },
         1920: {
           slidesPerView: 3,
-          loop: true
-        }
-      }
+          loop: true,
+        },
+      },
     });
     // My Account Page Slider//
     new Swiper('.my-account-page-slider', {
@@ -58,35 +58,35 @@
       loop: true,
       scrollbar: {
         el: '.swiper-scrollbar',
-        hide: true
+        hide: true,
       },
       autoplay: {
         delay: 3500,
-        disableOnInteraction: false
+        disableOnInteraction: false,
       },
       coverflow: {
         rotate: 40,
         stretch: 0,
         depth: 50,
         modifier: 1,
-        slideShadows: false
+        slideShadows: false,
       },
       breakpoints: {
         640: {
-          slidesPerView: 1.1
+          slidesPerView: 1.1,
         },
         768: {
-          slidesPerView: 2.4
+          slidesPerView: 2.4,
         },
         1024: {
           slidesPerView: 5.3,
-          loop: true
+          loop: true,
         },
         1920: {
           slidesPerView: 5.3,
-          loop: true
-        }
-      }
+          loop: true,
+        },
+      },
     });
     $('.open-suite').click(function () {
       $(this).parent().toggleClass('suite-open');
@@ -186,6 +186,16 @@
       $('.payment-review').removeClass('show');
       $('.payment-form-outer').addClass('show');
       $('#review-order').removeClass('show');
+    });
+    $('.product-price-variant > .v-price').click(function () {
+      $('.product-price-variant > .v-price').removeClass('active');
+      $(this).addClass('active');
+    });
+    $('.reset_variations').click(function () {
+      $('.v-price').removeClass('active');
+    });
+    $('.register_btn').click(function (e) {
+      e.preventDefault();
     });
   });
 })(jQuery);

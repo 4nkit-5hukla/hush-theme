@@ -6,6 +6,7 @@
 </head>
 
 <body <?php body_class();?>>
+<?php global $woocommerce; ?>
   <header>
     <div class="top-header secondary-bg-color d-none d-lg-block">
       <div class="container-fluid">
@@ -19,6 +20,14 @@
                     <a href="<?php echo $element['item']['url']; ?>" class="text-decoration-none"><?php echo $element['item']['title']; ?></a>
                 </li>
                 <?php endforeach; ?>
+                <li class="d-inline-block">
+                <!-- <a href="#" class="text-decoration-none login-form">Sign In</a> -->
+                <?php global $current_user; wp_get_current_user(); ?>
+                <?php if ( is_user_logged_in() ) { 
+                echo '<a href="'.site_url().'/my-account" style="text-decoration:none;">'.$current_user->user_login.'</a>'; } 
+                else { wp_loginout(); } ?>
+
+              </li>
             </ul>
             <?php endif; ?>
           </div>
@@ -39,9 +48,22 @@
             <div class="col col-md-7 col-lg-6 order-md-2 order-3 order-lg-2 px-0 px-md-2 d-flex justify-content-end justify-content-lg-center tab-view">
               <ul class="mx-0 mt-0 list-unstyled d-flex d-md-none mb-0 header-icon">
                 <li class="cart">
-                  <a class="text-decoration-none text-dark" href="<?php echo $middle_header['cart']['link']; ?>" aria-label="Cart">
+                  <a class="text-decoration-none text-dark cart-icon" href="<?php echo $middle_header['cart']['link']; ?>" aria-label="Cart">
                   <img src="<?php echo $middle_header['cart']['icon']; ?>" alt="cart icon" />
                   </a>
+                  <div class="total-item">
+                    <?php
+                    $item_count =  $woocommerce->cart->cart_contents_count;
+                    if($item_count > 9){
+                      echo '9+';
+                    }
+                    else{
+                      echo $item_count;
+                    }
+                  
+                  ?>
+                  </div>
+                  
                 </li>
                 <li class="heart-like">
                   <a class="text-decoration-none text-dark" href="<?php echo $middle_header['wish_list']['link']; ?>" aria-label="Wishlist">
@@ -65,6 +87,8 @@
                 <form class="form-inline my-2 my-lg-0 d-md-none search-form-header">
                   <input class="mr-sm-2 form-input-box" type="search" placeholder="Search" aria-label="Search" />
                 </form>
+                
+
               </div>
             </div>
             <div class="col col-md-3 col-lg-3 d-none d-md-flex d-lg-flex justify-content-end order-2 order lg-3 px-0 search-and-icon">
@@ -75,15 +99,28 @@
               </form>
               <ul class="mx-0 mt-0 list-unstyled d-flex mb-0 header-icon">
                 
-                <li class="cart">
+                <li class="heart-like">
                   <a class="text-decoration-none text-dark" href="<?php echo $middle_header['wish_list']['link']; ?>" aria-label="Wishlist">
                     <img src="<?php echo $middle_header['wish_list']['icon']; ?>" alt="wishlist" />
                   </a>
+                  
                 </li>
-                <li class="heart-like">
-                  <a class="text-decoration-none text-dark" href="<?php echo $middle_header['cart']['link']['url']; ?>" aria-label="<?php echo $middle_header['cart']['link']['title']; ?>">
+                <li class="cart">
+                  <a class="text-decoration-none text-dark cart-icon" href="<?php echo $middle_header['cart']['link']['url']; ?>" aria-label="<?php echo $middle_header['cart']['link']['title']; ?>">
                   <img src="<?php echo $middle_header['cart']['icon']; ?>" alt="cart icon" />
                   </a> 
+                  <div class="total-item">
+                    <?php
+                    $item_count =  $woocommerce->cart->cart_contents_count;
+                    if($item_count > 9){
+                      echo '9+';
+                    }
+                    else{
+                      echo $item_count;
+                    }
+                  
+                  ?>
+                  </div>
                 </li>
               </ul>
             </div>
